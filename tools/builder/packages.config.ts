@@ -102,37 +102,33 @@ export default {
     dependencies: {},
     exports: {
       '.': {
-        types: './effector.mjs.d.ts',
+        types: './index.d.ts',
         import: './effector.mjs',
         require: './effector.cjs.js',
         default: './effector.mjs',
       },
       './effector.mjs': {
-        types: './effector.mdj.d.ts',
+        types: './effector.mjs.d.ts',
+        import: './effector.mjs',
         default: './effector.mjs',
       },
       './fork': {
-        types: './fork.mjs.d.ts',
+        types: './fork.d.ts',
         import: './fork.mjs',
         require: './fork.js',
         default: './fork.mjs',
       },
       './compat': {
-        types: './compat.js.d.ts',
-        import: './compat.js',
+        types: './compat.d.ts',
+        require: './compat.js',
+        default: './compat.js',
       },
       './effector.umd': {
-        types: './effector.umd.js.d.ts',
-        import: './effector.umd.js',
+        types: './effector.umd.d.ts',
+        default: './effector.umd.js',
       },
-      './babel-plugin': {
-        types: './babel-plugin.js.d.ts',
-        import: './babel-plugin.js'
-      },
-      './babel-plugin-react': {
-        types: './babel-plugin-react.js.d.ts',
-        import: './babel-plugin-react.js'
-      },
+      './babel-plugin': './babel-plugin.js',
+      './babel-plugin-react': './babel-plugin-react.js',
       './package.json': './package.json',
     },
     files: [
@@ -154,7 +150,7 @@ export default {
     module: 'effector-react.mjs',
     exports: {
       '.': {
-        types: './effector-react.cjs.js.d.ts',
+        types: './index.d.ts',
         import: './effector-react.mjs',
         require: './effector-react.cjs.js',
         default: './effector-react.mjs',
@@ -162,31 +158,35 @@ export default {
       './package.json': './package.json',
       './effector-react.mjs': {
         types: './effector-react.mjs.d.ts',
-        import: './effector-react.mjs'
+        import: './effector-react.mjs',
+        default: './effector-react.mjs'
       },
       './scope.mjs': {
-        types: './scope.mjs.d.ts',
-        import: './scope.mjs'
+        types: './scope.d.ts',
+        import: './scope.mjs',
+        default: './scope.mjs'
       },
       './scope': {
-        types: './scope.mjs.d.ts',
+        types: './scope.d.ts',
         import: './scope.mjs',
         require: './scope.js',
         default: './scope.mjs',
       },
       './ssr': {
-        types: './ssr.mjs.d.ts',
+        types: './ssr.d.ts',
         import: './ssr.mjs',
         require: './ssr.js',
         default: './ssr.mjs',
       },
       './compat': {
-        types: './compat.js.d.ts',
-        import: './compat.js'
+        types: './compat.d.ts',
+        require: './compat.js',
+        default: './compat.js'
       },
       './effector-react.umd': {
-        types: './effector-react.umd.js.d.ts',
-        import: './effector-react.umd.js'
+        types: './effector-react.umd.d.ts',
+        require: './effector-react.umd.js',
+        default: './effector-react.umd.js'
       },
     },
     'umd:main': 'effector-react.umd.js',
@@ -220,7 +220,7 @@ export default {
     module: 'effector-solid.mjs',
     exports: {
       '.': {
-        types: './effector-solid.cjs.js.d.ts',
+        types: './index.d.ts',
         import: './effector-solid.mjs',
         require: './effector-solid.cjs.js',
         default: './effector-solid.mjs',
@@ -228,21 +228,24 @@ export default {
       './package.json': './package.json',
       './effector-solid.mjs': {
         types: './effector-solid.mjs.d.ts',
-        import: './effector-solid.mjs'
+        import: './effector-solid.mjs',
+        default: './effector-solid.mjs'
       },
       './scope.mjs': {
-        types: './scope.mjs.d.ts',
-        import: './scope.mjs'
+        types: './scope.d.ts',
+        import: './scope.mjs',
+        default: './scope.mjs'
       },
       './scope': {
-        types: './scope.mjs.d.ts',
+        types: './scope.d.ts',
         import: './scope.mjs',
         require: './scope.js',
         default: './scope.mjs',
       },
       './effector-solid.umd': {
-        types: './effector-solid.umd.js.d.ts',
-        import: './effector-solid.umd.js'
+        types: './effector-solid.umd.d.ts',
+        require: './effector-solid.umd.js',
+        default: './effector-solid.umd.js'
       },
     },
     'umd:main': 'effector-solid.umd.js',
@@ -270,42 +273,47 @@ export default {
     module: 'effector-vue.mjs',
     exports: {
       '.': {
-        types: './effector-vue.cjs.js.d.ts',
+        types: './index.d.ts',
         import: './effector-vue.mjs',
         require: './effector-vue.cjs.js',
         default: './effector-vue.mjs',
       },
       './composition': {
-        types: './composition.mjs.d.ts',
+        types: './composition.d.ts',
         import: './composition.mjs',
         require: './composition.cjs.js',
         default: './composition.mjs',
       },
       './ssr': {
-        types: './ssr.mjs.d.ts',
+        types: './ssr.d.ts',
         import: './ssr.mjs',
         require: './ssr.cjs.js',
         default: './ssr.mjs',
       },
       './effector-vue.mjs': {
         types: './effector-vue.mjs.d.ts',
-        import: './effector-vue.mjs'
+        import: './effector-vue.mjs',
+        default: './effector-vue.mjs'
       },
       './composition.mjs': {
         types: './composition.mjs.d.ts',
-        import: './composition.mjs'
+        import: './composition.mjs',
+        default: './composition.mjs'
       },
       './ssr.mjs': {
         types: './ssr.mjs.d.ts',
-        import: './ssr.mjs'
+        import: './ssr.mjs',
+        default: './ssr.mjs'
       },
       './compat': {
-        types: './compat.js.d.ts',
-        import: './compat.js'
+        types: './compat.d.ts',
+        require: './compat.js',
+        default: './compat.js'
       },
       './effector-vue.umd': {
-        types: './effector-vue.umd.js.d.ts',
-        import: './effector-vue.umd.js'
+        types: './effector-vue.umd.d.ts',
+        require: './effector-vue.umd.js',
+        default: './effector-vue.umd.js'
       },
     },
     'umd:main': 'effector-vue.umd.js',
@@ -342,24 +350,26 @@ export default {
     module: 'forest.mjs',
     exports: {
       '.': {
-        types: './forest.cjs.js.d.ts',
+        types: './index.d.ts',
         import: './forest.mjs',
         require: './forest.cjs.js',
         default: './forest.mjs',
       },
       './forest.mjs': {
         types: './forest.mjs.d.ts',
-        import: './forest.mjs'
+        import: './forest.mjs',
+        default: './forest.mjs'
       },
       './server': {
-        types: './server.mjs.d.ts',
+        types: './server.d.ts',
         import: './server.mjs',
         require: './server.js',
         default: './server.mjs',
       },
       './forest.umd': {
-        types: './forest.umd.js.d.ts',
-        import: './forest.umd.js'
+        types: './forest.umd.d.ts',
+        require: './forest.umd.js',
+        default: './forest.umd.js'
       },
     },
     'umd:main': 'forest.umd.js',

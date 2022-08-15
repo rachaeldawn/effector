@@ -6,7 +6,7 @@
   "module": "effector-solid.mjs",
   "exports": {
     ".": {
-      "types": "./effector-solid.cjs.js.d.ts",
+      "types": "./index.d.ts",
       "import": "./effector-solid.mjs",
       "require": "./effector-solid.cjs.js",
       "default": "./effector-solid.mjs"
@@ -14,21 +14,24 @@
     "./package.json": "./package.json",
     "./effector-solid.mjs": {
       "types": "./effector-solid.mjs.d.ts",
-      "import": "./effector-solid.mjs"
+      "import": "./effector-solid.mjs",
+      "default": "./effector-solid.mjs"
     },
     "./scope.mjs": {
-      "types": "./scope.mjs.d.ts",
-      "import": "./scope.mjs"
+      "types": "./scope.d.ts",
+      "import": "./scope.mjs",
+      "default": "./scope.mjs"
     },
     "./scope": {
-      "types": "./scope.mjs.d.ts",
+      "types": "./scope.d.ts",
       "import": "./scope.mjs",
       "require": "./scope.js",
       "default": "./scope.mjs"
     },
     "./effector-solid.umd": {
-      "types": "./effector-solid.umd.js.d.ts",
-      "import": "./effector-solid.umd.js"
+      "types": "./effector-solid.umd.d.ts",
+      "require": "./effector-solid.umd.js",
+      "default": "./effector-solid.umd.js"
     }
   },
   "umd:main": "effector-solid.umd.js",
