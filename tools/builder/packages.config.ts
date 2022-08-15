@@ -349,6 +349,7 @@ export default {
     main: 'forest.cjs.js',
     module: 'forest.mjs',
     exports: {
+      './package.json': './package.json',
       '.': {
         types: './index.d.ts',
         import: './forest.mjs',
