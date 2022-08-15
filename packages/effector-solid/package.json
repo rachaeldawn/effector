@@ -6,19 +6,30 @@
   "module": "effector-solid.mjs",
   "exports": {
     ".": {
+      "types": "./effector-solid.cjs.js.d.ts",
       "import": "./effector-solid.mjs",
       "require": "./effector-solid.cjs.js",
       "default": "./effector-solid.mjs"
     },
     "./package.json": "./package.json",
-    "./effector-solid.mjs": "./effector-solid.mjs",
-    "./scope.mjs": "./scope.mjs",
+    "./effector-solid.mjs": {
+      "types": "./effector-solid.mjs.d.ts",
+      "import": "./effector-solid.mjs"
+    },
+    "./scope.mjs": {
+      "types": "./scope.mjs.d.ts",
+      "import": "./scope.mjs"
+    },
     "./scope": {
+      "types": "./scope.mjs.d.ts",
       "import": "./scope.mjs",
       "require": "./scope.js",
       "default": "./scope.mjs"
     },
-    "./effector-solid.umd": "./effector-solid.umd.js"
+    "./effector-solid.umd": {
+      "types": "./effector-solid.umd.js.d.ts",
+      "import": "./effector-solid.umd.js"
+    }
   },
   "umd:main": "effector-solid.umd.js",
   "jsnext:main": "effector-solid.mjs",

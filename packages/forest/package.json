@@ -6,17 +6,25 @@
   "module": "forest.mjs",
   "exports": {
     ".": {
+      "types": "./forest.cjs.js.d.ts",
       "import": "./forest.mjs",
       "require": "./forest.cjs.js",
       "default": "./forest.mjs"
     },
-    "./forest.mjs": "./forest.mjs",
+    "./forest.mjs": {
+      "types": "./forest.mjs.d.ts",
+      "import": "./forest.mjs"
+    },
     "./server": {
+      "types": "./server.mjs.d.ts",
       "import": "./server.mjs",
       "require": "./server.js",
       "default": "./server.mjs"
     },
-    "./forest.umd": "./forest.umd.js"
+    "./forest.umd": {
+      "types": "./forest.umd.js.d.ts",
+      "import": "./forest.umd.js"
+    }
   },
   "umd:main": "forest.umd.js",
   "jsnext:main": "forest.mjs",

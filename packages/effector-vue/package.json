@@ -6,25 +6,43 @@
   "module": "effector-vue.mjs",
   "exports": {
     ".": {
+      "types": "./effector-vue.cjs.js.d.ts",
       "import": "./effector-vue.mjs",
       "require": "./effector-vue.cjs.js",
       "default": "./effector-vue.mjs"
     },
     "./composition": {
+      "types": "./composition.mjs.d.ts",
       "import": "./composition.mjs",
       "require": "./composition.cjs.js",
       "default": "./composition.mjs"
     },
     "./ssr": {
+      "types": "./ssr.mjs.d.ts",
       "import": "./ssr.mjs",
       "require": "./ssr.cjs.js",
       "default": "./ssr.mjs"
     },
-    "./effector-vue.mjs": "./effector-vue.mjs",
-    "./composition.mjs": "./composition.mjs",
-    "./ssr.mjs": "./ssr.mjs",
-    "./compat": "./compat.js",
-    "./effector-vue.umd": "./effector-vue.umd.js"
+    "./effector-vue.mjs": {
+      "types": "./effector-vue.mjs.d.ts",
+      "import": "./effector-vue.mjs"
+    },
+    "./composition.mjs": {
+      "types": "./composition.mjs.d.ts",
+      "import": "./composition.mjs"
+    },
+    "./ssr.mjs": {
+      "types": "./ssr.mjs.d.ts",
+      "import": "./ssr.mjs"
+    },
+    "./compat": {
+      "types": "./compat.js.d.ts",
+      "import": "./compat.js"
+    },
+    "./effector-vue.umd": {
+      "types": "./effector-vue.umd.js.d.ts",
+      "import": "./effector-vue.umd.js"
+    }
   },
   "umd:main": "effector-vue.umd.js",
   "jsnext:main": "effector-vue.mjs",

@@ -10,20 +10,37 @@
   "dependencies": {},
   "exports": {
     ".": {
+      "types": "./effector.mjs.d.ts",
       "import": "./effector.mjs",
       "require": "./effector.cjs.js",
       "default": "./effector.mjs"
     },
-    "./effector.mjs": "./effector.mjs",
+    "./effector.mjs": {
+      "types": "./effector.mdj.d.ts",
+      "default": "./effector.mjs"
+    },
     "./fork": {
+      "types": "./fork.mjs.d.ts",
       "import": "./fork.mjs",
       "require": "./fork.js",
       "default": "./fork.mjs"
     },
-    "./compat": "./compat.js",
-    "./effector.umd": "./effector.umd.js",
-    "./babel-plugin": "./babel-plugin.js",
-    "./babel-plugin-react": "./babel-plugin-react.js",
+    "./compat": {
+      "types": "./compat.js.d.ts",
+      "import": "./compat.js"
+    },
+    "./effector.umd": {
+      "types": "./effector.umd.js.d.ts",
+      "import": "./effector.umd.js"
+    },
+    "./babel-plugin": {
+      "types": "./babel-plugin.js.d.ts",
+      "import": "./babel-plugin.js"
+    },
+    "./babel-plugin-react": {
+      "types": "./babel-plugin-react.js.d.ts",
+      "import": "./babel-plugin-react.js"
+    },
     "./package.json": "./package.json"
   },
   "files": [
